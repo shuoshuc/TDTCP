@@ -1,0 +1,10 @@
+[submodule "linux-tdtcp"]
+	path = linux-tdtcp
+	url = git@github.com:shuoshuc/linux-tdtcp.git
+[submodule "linux-retcp"]
+	path = linux-retcp
+	url = git@github.com:shuoshuc/linux-retcp.git
+[submodule "mptcp"]
+	path = mptcp
+	url = git@github.com:shuoshuc/mptcp.git
+	branch = dev
