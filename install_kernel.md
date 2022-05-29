@@ -14,5 +14,5 @@ We prefer to use `kexec` to switch kernel. A script was provided to aid
 navigating through all kernels:
 `chmod u+x swap_kernel.sh`
 `sudo ./swap_kernel.sh <desired kernel>`
-where desired kernel is one of `tdtcp_main`, `tdtcp_dev`, `mptcp` or `retcp`.
+where desired kernel is one of `tdtcp-main`, `tdtcp-dev`, `mptcp` or `retcp`.
 
