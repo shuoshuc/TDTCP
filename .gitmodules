@@ -1,0 +1,13 @@
+[submodule "linux-retcp"]
+	path = linux-retcp
+	url = https://github.com/shuoshuc/linux-retcp.git
+[submodule "linux-tdtcp"]
+	path = linux-tdtcp
+	url = https://github.com/shuoshuc/linux-tdtcp.git
+[submodule "mptcp"]
+	path = mptcp
+	url = https://github.com/shuoshuc/mptcp.git
+	shallow = true
+[submodule "wireshark-tdtcp"]
+	path = wireshark-tdtcp
+	url = https://github.com/shuoshuc/wireshark-tdtcp.git
