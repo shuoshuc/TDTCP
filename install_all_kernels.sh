@@ -13,9 +13,9 @@ cd linux-tdtcp
 git fetch origin main
 git checkout main
 make ARCH=x86 tdtcp_defconfig
-#make -j $(nproc)
-#sudo make modules_install
-#sudo make install
+make -j $(nproc)
+sudo make modules_install
+sudo make install
 
 make clean
 rm .config
@@ -24,9 +24,9 @@ rm .config
 git fetch origin dev
 git checkout dev
 make ARCH=x86 tdtcp_defconfig
-#make -j $(nproc)
-#sudo make modules_install
-#sudo make install
+make -j $(nproc)
+sudo make modules_install
+sudo make install
 
 make clean
 rm .config
@@ -37,9 +37,9 @@ cd mptcp
 git fetch origin dev
 git checkout dev
 make ARCH=x86 mptcp_defconfig
-#make -j $(nproc)
-#sudo make modules_install
-#sudo make install
+make -j $(nproc)
+sudo make modules_install
+sudo make install
 
 make clean
 rm .config
@@ -50,9 +50,9 @@ cd linux-retcp
 git fetch origin main
 git checkout main
 make ARCH=x86 retcp_defconfig
-#make -j $(nproc)
-#sudo make modules_install
-#sudo make install
+make -j $(nproc)
+sudo make modules_install
+sudo make install
 
 make clean
 rm .config
