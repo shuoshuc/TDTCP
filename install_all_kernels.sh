@@ -10,23 +10,23 @@ git config --global --add safe.directory $(pwd)/mptcp
 
 # install TDTCP main branch kernel
 cd linux-tdtcp
-git pull origin main
+git fetch origin main
 git checkout main
 make ARCH=x86 tdtcp_defconfig
-make -j $(nproc)
-sudo make modules_install
-sudo make install
+#make -j $(nproc)
+#sudo make modules_install
+#sudo make install
 
 make clean
 rm .config
 
 # install TDTCP dev branch kernel
-git pull origin dev
+git fetch origin dev
 git checkout dev
 make ARCH=x86 tdtcp_defconfig
-make -j $(nproc)
-sudo make modules_install
-sudo make install
+#make -j $(nproc)
+#sudo make modules_install
+#sudo make install
 
 make clean
 rm .config
@@ -34,12 +34,12 @@ rm .config
 # install MPTCP kernel
 cd ..
 cd mptcp
-git pull origin dev
+git fetch origin dev
 git checkout dev
 make ARCH=x86 mptcp_defconfig
-make -j $(nproc)
-sudo make modules_install
-sudo make install
+#make -j $(nproc)
+#sudo make modules_install
+#sudo make install
 
 make clean
 rm .config
@@ -47,12 +47,12 @@ rm .config
 # install reTCP kernel
 cd ..
 cd linux-retcp
-git pull origin main
+git fetch origin main
 git checkout main
 make ARCH=x86 retcp_defconfig
-make -j $(nproc)
-sudo make modules_install
-sudo make install
+#make -j $(nproc)
+#sudo make modules_install
+#sudo make install
 
 make clean
 rm .config
