@@ -8,3 +8,6 @@
 	path = mptcp
 	url = git@github.com:shuoshuc/mptcp.git
 	branch = dev
+[submodule "wireshark-tdtcp"]
+	path = wireshark-tdtcp
+	url = git@github.com:shuoshuc/wireshark-tdtcp.git
