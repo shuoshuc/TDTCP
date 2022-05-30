@@ -5,7 +5,7 @@ export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
 sudo debconf-set-selections kexec-preseed.txt
 sudo apt-get install -y build-essential libncurses-dev bison flex libssl-dev libelf-dev kexec-tools python3 python3-pip
 
-pip3 install -y numpy pandas matplotlib cycler
+pip install numpy pandas matplotlib cycler
 
 # set default boot to current (vanila) kernel
 echo "GRUB_DEFAULT=\"Advanced options for Ubuntu>Ubuntu, with Linux $(uname -r)\"" | sudo tee -a /etc/default/grub
