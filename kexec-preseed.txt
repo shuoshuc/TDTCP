@@ -1,0 +1,2 @@
+kexec-tools kexec-tools/load_kexec select true
+kexec-tools kexec-tools/use_grub_config select false
