@@ -1,10 +1,5 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from collections import namedtuple
-from cycler import cycler
-from operator import sub, add
-from matplotlib.ticker import FormatStrFormatter
-from statistics import mean, stdev
 from numpy import arange
  
 # Keys: E:O
@@ -67,4 +62,4 @@ ax.legend([bplot["boxes"][0], bplot["boxes"][1]], ['mptcp', 'tdtcp'],
           labelspacing=0, frameon=False, columnspacing=0.5, ncol=2,
           bbox_to_anchor=(0.47, 0.18))
 
-plt.savefig('oe_ratio_mptcp_boxplt.pdf', dpi=200, format='pdf')
+plt.savefig('oe_ratio_mptcp_boxplt.pdf', dpi=200, format='pdf', bbox_inches='tight' )

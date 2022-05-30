@@ -1,10 +1,5 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from collections import namedtuple
-from cycler import cycler
-from operator import sub, add
-from matplotlib.ticker import FormatStrFormatter
-from statistics import mean, stdev
 
 # Keys: E:O
 throughputs = {
@@ -84,4 +79,4 @@ ax.legend(bbox_to_anchor=(1, 1.2), loc='upper right',
           borderaxespad=0, handlelength=1, ncol=4, handletextpad=0.5,
           labelspacing=0, frameon=False, columnspacing=1)
 
-plt.savefig('oe-ratio-barplt.pdf', dpi=200, format='pdf')
+plt.savefig('oe-ratio-barplt.pdf', dpi=200, format='pdf', bbox_inches='tight')

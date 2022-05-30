@@ -48,4 +48,4 @@ for tcpvar in reord_cnt.keys():
   ax2.set_xlabel('# packets to be retransmitted\nper optical day\n(b)')
   ax2.legend(bbox_to_anchor=(0.95, 0.05), loc='lower right', borderaxespad=0, handlelength=1.5)
 
-plt.savefig('reorder_microbenchmark.pdf', dpi=200, format='pdf')
+plt.savefig('reorder_microbenchmark.pdf', dpi=200, format='pdf', bbox_inches='tight')

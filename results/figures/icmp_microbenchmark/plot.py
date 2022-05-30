@@ -71,5 +71,5 @@ ax3.set_ylabel('milliseconds')
 ax3.set_xlabel('separate interface\n(c)')
 ax3.xaxis.set_label_coords(0.5,-0.06)
 ax3.legend(bbox_to_anchor=(-4.3, 1.35), loc='upper left', borderaxespad=0, ncol=3)
+fig.savefig('icmp_microbenchmark.pdf', dpi=200, format='pdf', bbox_inches='tight' )
 
-plt.savefig('icmp_microbenchmark.pdf', dpi=200, format='pdf')
