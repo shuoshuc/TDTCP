@@ -11,3 +11,7 @@
 [submodule "wireshark-tdtcp"]
 	path = wireshark-tdtcp
 	url = https://github.com/shuoshuc/wireshark-tdtcp.git
+[submodule "etalon"]
+	path = etalon
+	url = https://github.com/ccanel/etalon.git
+	branch = tdtcp-stable
