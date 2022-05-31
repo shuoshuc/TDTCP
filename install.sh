@@ -1,5 +1,8 @@
 #!/bin/bash
 
+git submodule init
+git submodule update
+
 # install required packages
 export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
 sudo debconf-set-selections kexec-preseed.txt
@@ -37,6 +40,8 @@ sudo make install
 
 make clean
 rm .config
+# optional: remove kernel soruce if they take too much space
+# rm -rf *
 
 # install MPTCP kernel
 cd ..
@@ -50,6 +55,8 @@ sudo make install
 
 make clean
 rm .config
+# optional: remove kernel soruce if they take too much space
+# rm -rf *
 
 # install reTCP kernel
 cd ..
@@ -63,3 +70,11 @@ sudo make install
 
 make clean
 rm .config
+# optional: remove kernel soruce if they take too much space
+# rm -rf *
+
+# install etalon
+cd ..
+ln -s ./etalon "$HOME/etalon"
+bash -c "$HOME/etalon/bin/install.sh"
+
