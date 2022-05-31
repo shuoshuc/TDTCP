@@ -1,5 +1,8 @@
 #!/bin/bash
 
+NEW_HOSTNAME=$1
+REBOOT=$2
+
 git submodule init
 git submodule update
 
@@ -76,5 +79,5 @@ rm .config
 # install etalon
 cd ..
 ln -s ./etalon "$HOME/etalon"
-bash -c "$HOME/etalon/bin/install.sh"
+bash -c "$HOME/etalon/bin/install.sh" $NEW_HOSTNAME $REBOOT
 
