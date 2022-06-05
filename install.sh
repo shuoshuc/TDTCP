@@ -4,7 +4,7 @@ NEW_HOSTNAME=$1
 REBOOT=$2
 
 git submodule init
-git submodule update
+git submodule update --depth 1
 
 # install required packages
 export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
