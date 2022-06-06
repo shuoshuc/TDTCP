@@ -23,7 +23,7 @@ git config --global --add safe.directory $(pwd)/mptcp
 
 # install TDTCP main branch kernel
 cd linux-tdtcp
-git fetch origin main
+git fetch origin main:main
 git checkout main
 make ARCH=x86 tdtcp_defconfig
 make -j $(nproc)
@@ -34,7 +34,7 @@ make clean
 rm .config
 
 # install TDTCP dev branch kernel
-git fetch origin dev
+git fetch origin dev:dev
 git checkout dev
 make ARCH=x86 tdtcp_defconfig
 make -j $(nproc)
@@ -49,7 +49,7 @@ rm .config
 # install MPTCP kernel
 cd ..
 cd mptcp
-git fetch origin dev
+git fetch origin dev:dev
 git checkout dev
 make ARCH=x86 mptcp_defconfig
 make -j $(nproc)
@@ -64,7 +64,7 @@ rm .config
 # install reTCP kernel
 cd ..
 cd linux-retcp
-git fetch origin main
+git fetch origin main:main
 git checkout main
 make ARCH=x86 retcp_defconfig
 make -j $(nproc)
@@ -75,9 +75,3 @@ make clean
 rm .config
 # optional: remove kernel soruce if they take too much space
 # rm -rf *
-
-# install etalon
-cd ..
-ln -s ./etalon "$HOME/etalon"
-bash -c "$HOME/etalon/bin/install.sh" $NEW_HOSTNAME $REBOOT
-
