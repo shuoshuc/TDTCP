@@ -164,7 +164,7 @@ Log parsing might take around 15 minutes if running on the experiment machine. W
 | seq_all_ccas_latency_only_fast_voq.pdf | Figure 14b |
 
 ## Adapting the experiment setup on CloudLab
-The Utah d6515 instance on CloudLab can be potentially used to set up the testbed. Please note that some configurations and the auto installation script has to be manually tweaked due to the hardware differences. A very special kudos to Shourya Agarwal, Tessa Hammond and Ahmed Saeed from Georgia Tech for spending the time to port the testbed to CloudLab. Their detailed writeup can be found (here)[https://github.com/smagarwal/TDTCP-installtion-guide-for-CloudLab].
+The Utah d6515 instance on CloudLab can be potentially used to set up the testbed. Please note that some configurations and the auto installation script has to be manually tweaked due to the hardware differences. A very special kudos to Shourya Agarwal, Tessa Hammond and Ahmed Saeed from Georgia Tech for spending the time to port the testbed to CloudLab. Their detailed writeup can be found [here](https://github.com/smagarwal/TDTCP-installtion-guide-for-CloudLab).
 
 ## Potential Errors
 **[1]**
